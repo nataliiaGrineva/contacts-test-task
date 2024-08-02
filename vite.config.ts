@@ -18,5 +18,5 @@ export default defineConfig({
     environment: 'jsdom',
     setupFiles: './setupTests.ts',
     css: false,
-  },
+  }
 } as UserConfigExport);
