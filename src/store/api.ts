@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { IContactsResponse, ICreateContactPayload } from "../interfaces";
-import { TOKEN } from "./constants";
+import { BASE_URL, TOKEN } from "./constants";
 
 export const contactsApi = createApi({
   reducerPath: "contactsApi",
   baseQuery: fetchBaseQuery({
-    baseUrl: "/api",
+    baseUrl: BASE_URL,
     headers: {
       Authorization: `Bearer ${TOKEN}`,
     },

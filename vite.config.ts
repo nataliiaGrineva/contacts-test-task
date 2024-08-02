@@ -4,6 +4,7 @@ import { UserConfigExport } from 'vite';
 
 export default defineConfig({
   plugins: [react()],
+  base: "",
   server: {
     proxy: {
       '/api': {
