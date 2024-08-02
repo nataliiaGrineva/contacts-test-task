@@ -1,0 +1,1 @@
+export {prepareContactPayload} from './prepareContactPayload';

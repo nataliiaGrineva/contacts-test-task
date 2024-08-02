@@ -7,5 +7,10 @@
     {
       "path": "./tsconfig.node.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "types": ["./src/extendedTheme.d.ts", "jest", "node", "@testing-library/jest-dom"],
+  }
 }
